@@ -1,18 +1,23 @@
+require "prototypes/constants"
+require "prototypes/items"
+require "prototypes/entities"
+require "prototypes/recipes"
+require "prototypes/technology"
+
 data:extend({
   {
     type = "noise-layer",
     name = "cave-ground"
   },
-  
-    {
-    type = "flying-text",
-    name = "cave-view-x-mark",
-    flags = {"not-on-map"},
-    time_to_live = 4294967295, --http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.time_to_live
-    speed = 0
+  {
+  type = "flying-text",
+  name = "cave-view-x-mark",
+  flags = {"not-on-map"},
+  time_to_live = 4294967295, --http://lua-api.factorio.com/latest/LuaEntity.html#LuaEntity.time_to_live
+  speed = 0
   },
   
-{
+  {
     type = "tile",
     name = "cave-ground",
     collision_mask = {"ground-tile"},
@@ -23,49 +28,49 @@ data:extend({
       main =
       {
         {
-          picture = "__Caves__/graphics/terrain/cave-ground/cave-ground1.png",
+          picture = constants.basePathGraphicsTerrain+"cave-ground/cave-ground1.png",
           count = 16,
           size = 1,
           hr_version =
           {
-            picture = "__Caves__/graphics/terrain/cave-ground/hr-cave-ground1.png",
+            picture = constants.basePathGraphicsTerrain+"cave-ground/hr-cave-ground1.png",
             count = 16,
             size = 1,
             scale = 0.5,
           },
         },
         {
-          picture = "__Caves__/graphics/terrain/cave-ground/cave-ground2.png",
+          picture = constants.basePathGraphicsTerrain+"cave-ground/cave-ground2.png",
           count = 16,
           size = 2,
           hr_version =
           {
-            picture = "__Caves__/graphics/terrain/cave-ground/hr-cave-ground2.png",
+            picture = constants.basePathGraphicsTerrain+"cave-ground/hr-cave-ground2.png",
             count = 16,
             size = 2,
             scale = 0.5,
           },
         },
         {
-          picture = "__Caves__/graphics/terrain/cave-ground/cave-ground4.png",
+          picture = constants.basePathGraphicsTerrain+"cave-ground/cave-ground4.png",
           count = 16,
           size = 4,
           hr_version =
           {
-            picture = "__Caves__/graphics/terrain/cave-ground/hr-cave-ground4.png",
+            picture = constants.basePathGraphicsTerrain+"cave-ground/hr-cave-ground4.png",
             count = 16,
             size = 4,
             scale = 0.5,
           }
         },
         {
-          picture = "__Caves__/graphics/terrain/cave-ground/cave-ground8.png",
+          picture = constants.basePathGraphicsTerrain+"cave-ground/cave-ground8.png",
           line_length = 4,
           count = 16,
           size = 8,
           hr_version =
           {
-            picture = "__Caves__/graphics/terrain/cave-ground/hr-cave-ground8.png",
+            picture = constants.basePathGraphicsTerrain+"cave-ground/hr-cave-ground8.png",
             line_length = 4,
             count = 16,
             size = 8,
@@ -73,13 +78,13 @@ data:extend({
           }
         },
         {
-          picture = "__Caves__/graphics/terrain/cave-ground/cave-ground16.png",
+          picture = constants.basePathGraphicsTerrain+"cave-ground/cave-ground16.png",
           line_length = 4,
           count = 16,
           size = 16,
           hr_version =
           {
-            picture = "__Caves__/graphics/terrain/cave-ground/hr-cave-ground16.png",
+            picture = constants.basePathGraphicsTerrain+"cave-ground/hr-cave-ground16.png",
             line_length = 4,
             count = 16,
             size = 16,
@@ -89,33 +94,33 @@ data:extend({
       },
       inner_corner =
       {
-        picture = "__Caves__/graphics/terrain/cave-ground/cave-ground-inner-corner.png",
+        picture = constants.basePathGraphicsTerrain+"cave-ground/cave-ground-inner-corner.png",
         count = 8,
         hr_version =
         {
-          picture = "__Caves__/graphics/terrain/cave-ground/hr-cave-ground-inner-corner.png",
+          picture = constants.basePathGraphicsTerrain+"cave-ground/hr-cave-ground-inner-corner.png",
           count = 8,
           scale = 0.5,
         },
       },
       outer_corner =
       {
-        picture = "__Caves__/graphics/terrain/cave-ground/cave-ground-outer-corner.png",
+        picture = constants.basePathGraphicsTerrain+"cave-ground/cave-ground-outer-corner.png",
         count = 8,
         hr_version =
         {
-          picture = "__Caves__/graphics/terrain/cave-ground/hr-cave-ground-outer-corner.png",
+          picture = constants.basePathGraphicsTerrain+"cave-ground/hr-cave-ground-outer-corner.png",
           count = 8,
           scale = 0.5,
         },
       },
       side =
       {
-        picture = "__Caves__/graphics/terrain/cave-ground/cave-ground-side.png",
+        picture = constants.basePathGraphicsTerrain+"cave-ground/cave-ground-side.png",
         count = 8,
         hr_version =
         {
-          picture = "__Caves__/graphics/terrain/cave-ground/hr-cave-ground-side.png",
+          picture = constants.basePathGraphicsTerrain+"cave-ground/hr-cave-ground-side.png",
           count = 8,
           scale = 0.5,
         },
@@ -165,44 +170,44 @@ data:extend({
       main =
       {
         {
-          picture = "__Caves__/graphics/terrain/cave-wall/cave1.png",
+          picture = constants.basePathGraphicsTerrain+"cave-wall/cave1.png",
           count = 16,
           size = 1
         },
         {
-          picture = "__Caves__/graphics/terrain/cave-wall/cave2.png",
+          picture = constants.basePathGraphicsTerrain+"cave-wall/cave2.png",
           count = 16,
           size = 2
         },
         {
-          picture = "__Caves__/graphics/terrain/cave-wall/cave4.png",
+          picture = constants.basePathGraphicsTerrain+"cave-wall/cave4.png",
           count = 16,
           size = 4
         }
       },
       inner_corner =
       {
-        picture = "__Caves__/graphics/terrain/cave-wall/cave-inner-corner.png",
+        picture = constants.basePathGraphicsTerrain+"cave-wall/cave-inner-corner.png",
         count = 1
       },
       outer_corner =
       {
-        picture = "__Caves__/graphics/terrain/cave-wall/cave-outer-corner.png",
+        picture = constants.basePathGraphicsTerrain+"cave-wall/cave-outer-corner.png",
         count = 1
       },
       side =
       {
-        picture = "__Caves__/graphics/terrain/cave-wall/cave-side.png",
+        picture = constants.basePathGraphicsTerrain+"cave-wall/cave-side.png",
         count = 1
       },
 	  u_transition = 
 	  {
-		picture = "__Caves__/graphics/terrain/cave-wall/cave-u.png",
+		picture = constants.basePathGraphicsTerrain+"cave-wall/cave-u.png",
         count = 1
 	  },
 	  o_transition = 
 	  {
-		picture = "__Caves__/graphics/terrain/cave-wall/cave-o.png",
+		picture = constants.basePathGraphicsTerrain+"cave-wall/cave-o.png",
         count = 1
 	  },
     },
@@ -214,7 +219,7 @@ data:extend({
   {
     type = "electric-energy-interface",
     name = "mine-entrance",
-    icon = "__Caves__/graphics/icons/mine-entrance/mine-entrance.png",
+    icon = constants.basePathGraphicsIcons+"mine-entrance/mine-entrance.png",
 	order="e-a-b",
     flags = {"placeable-neutral", "player-creation", "not-blueprintable"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "mine-entrance"},
@@ -232,7 +237,7 @@ data:extend({
     },
     picture =
     {
-      filename = "__Caves__/graphics/entity/mine-entrance/mine-entrance.png",
+      filename = constants.basePathGraphicsEntity+"mine-entrance/mine-entrance.png",
       priority = "extra-high",
       width = 160,
       height = 112,
@@ -240,7 +245,7 @@ data:extend({
     },
     charge_animation =
     {
-      filename = "__Caves__/graphics/entity/mine-entrance/mine-entrance-charge-animation.png",
+      filename = constants.basePathGraphicsEntity+"mine-entrance/mine-entrance-charge-animation.png",
       width = 160,
       height = 112,
       line_length = 1,
@@ -252,7 +257,7 @@ data:extend({
     charge_light = {intensity = 0.3, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
     discharge_animation =
     {
-      filename = "__Caves__/graphics/entity/mine-entrance/mine-entrance-discharge-animation.png",
+      filename = constants.basePathGraphicsEntity+"mine-entrance/mine-entrance-discharge-animation.png",
       width = 160,
       height = 112,
       line_length = 1,
@@ -297,7 +302,7 @@ data:extend({
     {
     type = "item",
     name = "mine-entrance",
-    icon = "__Caves__/graphics/icons/mine-entrance/mine-entrance.png",
+    icon = constants.basePathGraphicsIcons+"mine-entrance/mine-entrance.png",
     flags = {"goes-to-quickbar"},
     subgroup = "transport",
     order = "c[mine-entrance]",
@@ -341,7 +346,7 @@ data:extend({
     },
     picture =
     {
-      filename = "__Caves__/graphics/entity/mine-exit/mine-exit.png",
+      filename = constants.basePathGraphicsEntity+"mine-exit/mine-exit.png",
       priority = "extra-high",
       width = 160,
       height = 112,
@@ -349,7 +354,7 @@ data:extend({
     },
     charge_animation =
     {
-      filename = "__Caves__/graphics/entity/mine-exit/mine-exit-charge-animation.png",
+      filename = constants.basePathGraphicsEntity+"mine-exit/mine-exit-charge-animation.png",
       width = 160,
       height = 112,
       line_length = 1,
@@ -361,7 +366,7 @@ data:extend({
     charge_light = {intensity = 0.3, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
     discharge_animation =
     {
-      filename = "__Caves__/graphics/entity/mine-exit/mine-exit-discharge-animation.png",
+      filename = constants.basePathGraphicsEntity+"mine-exit/mine-exit-discharge-animation.png",
       width = 160,
       height = 112,
       line_length = 1,

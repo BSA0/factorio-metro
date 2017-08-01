@@ -1,9 +1,9 @@
 {
-  "name": "Caves",
-  "version": "0.1.4",
-  "title": "Caves",
-  "author": "CaveGrinder",
-  "description": "Adds a cave system  to the game that contains the resources instead of the normal surface.",
+  "name": "factorio-metro",
+  "version": "0.1.0",
+  "title": "factorio-metro",
+  "author": "BSAO",
+  "description": "Adds surface that could be used only for rails. Aka Metro. Aka underground.",
   "factorio_version": "0.15",
-  "dependencies": ["base >= 0.15.26"]
+  "dependencies": ["base >= 0.15.31"]
 }
