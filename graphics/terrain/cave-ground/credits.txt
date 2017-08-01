@@ -1,0 +1,2 @@
+these textures are color shifted modifications of the red-desert-dark textures from the factorio game.
+therefore please use them only according to what is permitted by the factorio developers.

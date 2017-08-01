@@ -1,0 +1,9 @@
+{
+  "name": "Caves",
+  "version": "0.1.4",
+  "title": "Caves",
+  "author": "CaveGrinder",
+  "description": "Adds a cave system  to the game that contains the resources instead of the normal surface.",
+  "factorio_version": "0.15",
+  "dependencies": ["base >= 0.15.26"]
+}
