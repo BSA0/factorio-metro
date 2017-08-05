@@ -2,7 +2,7 @@
   "name": "factorio-metro",
   "version": "0.1.0",
   "title": "factorio-metro",
-  "author": "System & BSAO",
+  "author": "System",
   "description": "Adds surface that could be used only for rails. Aka Metro. Aka underground.",
   "factorio_version": "0.15",
   "dependencies": ["base >= 0.15.31"]
